@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.05" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Filters for Glow Effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+    </filter>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(7px); }
+      }
+      @keyframes dashStream {
+        0% { stroke-dashoffset: 120; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes badgePulse {
+        0%, 100% { opacity: 0.85; }
+        50% { opacity: 1; }
+      }
+
+      .pulse-orb-1 {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: 200px 100px;
+      }
+      .pulse-orb-2 {
+        animation: pulseGlow 7s ease-in-out infinite 1.5s;
+        transform-origin: 1000px 320px;
+      }
+      .floating-card-1 {
+        animation: floatSlow 5s ease-in-out infinite;
+      }
+      .floating-card-2 {
+        animation: floatReverse 6s ease-in-out infinite 0.5s;
+      }
+      .stream-line {
+        stroke-dasharray: 8 6;
+        animation: dashStream 15s linear infinite;
+      }
+      .badge-glow {
+        animation: badgePulse 3s ease-in-out infinite;
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+      }
+      .code-pill {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-size: 13px;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Ambient Nebula Glows -->
+  <circle cx="180" cy="90" r="140" fill="#38bdf8" filter="url(#softGlow)" class="pulse-orb-1" />
+  <circle cx="1020" cy="330" r="160" fill="#a855f7" filter="url(#softGlow)" class="pulse-orb-2" />
+  <circle cx="600" cy="390" r="100" fill="#6366f1" filter="url(#softGlow)" opacity="0.2" />
+
+  <!-- Technical Grid Matrix Pattern -->
+  <g stroke="#334155" stroke-width="0.7" opacity="0.25">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="360" x2="1200" y2="360" />
+    <line x1="120" y1="0" x2="120" y2="420" />
+    <line x1="240" y1="0" x2="240" y2="420" />
+    <line x1="360" y1="0" x2="360" y2="420" />
+    <line x1="480" y1="0" x2="480" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="720" y1="0" x2="720" y2="420" />
+    <line x1="840" y1="0" x2="840" y2="420" />
+    <line x1="960" y1="0" x2="960" y2="420" />
+    <line x1="1080" y1="0" x2="1080" y2="420" />
+  </g>
+
+  <!-- Flowing Connection Streams (Behind foreground cards) -->
+  <g fill="none" opacity="0.4">
+    <path d="M 80,310 Q 300,160 550,210 T 1120,120" stroke="#38bdf8" stroke-width="2" class="stream-line" />
+    <path d="M 120,110 Q 420,290 700,240 T 1140,320" stroke="#818cf8" stroke-width="1.5" class="stream-line" style="animation-duration: 22s;" />
+  </g>
+
+  <!-- Decorative Corner Hologram Accent Cards (Positioned safely away from title) -->
+  <!-- Top Right Card: Redline Diff Preview -->
+  <g class="floating-card-1" opacity="0.88">
+    <rect x="910" y="35" width="245" height="100" rx="12" fill="url(#cardGrad)" stroke="#475569" stroke-width="1.2" />
+    <circle cx="930" cy="55" r="4.5" fill="#ef4444" />
+    <circle cx="945" cy="55" r="4.5" fill="#eab308" />
+    <circle cx="960" cy="55" r="4.5" fill="#22c55e" />
+    <text x="980" y="59" fill="#94a3b8" font-size="11" class="code-pill">clause_v3.redline</text>
+    <rect x="930" y="74" width="205" height="15" rx="4" fill="#ef4444" fill-opacity="0.18" />
+    <text x="938" y="85" fill="#f87171" font-size="10.5" class="code-pill">- Indemnity Cap: $500,000</text>
+    <rect x="930" y="96" width="205" height="15" rx="4" fill="#22c55e" fill-opacity="0.18" />
+    <text x="938" y="107" fill="#4ade80" font-size="10.5" class="code-pill">+ Mutual Cap: 2x Annual Fees</text>
+  </g>
+
+  <!-- Bottom Left Card: Deal Workspace Pipeline -->
+  <g class="floating-card-2" opacity="0.88">
+    <rect x="45" y="285" width="235" height="95" rx="12" fill="url(#cardGrad)" stroke="#475569" stroke-width="1.2" />
+    <text x="65" y="312" fill="#38bdf8" font-size="12" font-weight="700" class="title-text">⚡ LIVE NEGOTIATION</text>
+    <rect x="65" y="325" width="195" height="6" rx="3" fill="#334155" />
+    <rect x="65" y="325" width="145" height="6" rx="3" fill="url(#primaryGlow)" />
+    <circle cx="75" cy="355" r="6" fill="#10b981" />
+    <text x="90" y="359" fill="#cbd5e1" font-size="11" class="subtitle-text">Legal &amp; Sales Aligned (78%)</text>
+  </g>
+
+  <!-- FOREGROUND HERO HEADER & TEXT (Protected & Prominent) -->
+  <g>
+    <!-- Top Pill Category Badge -->
+    <g class="badge-glow">
+      <rect x="430" y="42" width="340" height="34" rx="17" fill="#1e293b" stroke="#6366f1" stroke-width="1.4" />
+      <circle cx="448" cy="59" r="5" fill="#38bdf8">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="464" y="64" fill="#e2e8f0" font-size="13" font-weight="600" class="subtitle-text">LEGALTECH &amp; CLM ECOSYSTEM 2026</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="145" text-anchor="middle" fill="#ffffff" font-size="44" class="title-text" filter="url(#glow)">
+      Collaborative Contract
+    </text>
+    <text x="600" y="202" text-anchor="middle" fill="url(#primaryGlow)" font-size="46" class="title-text">
+      Negotiation Portal
+    </text>
+
+    <!-- Subtitle & Value Proposition -->
+    <text x="600" y="246" text-anchor="middle" fill="#94a3b8" font-size="17" class="subtitle-text">
+      Curated Real-Time Redlining, Turn-Based Review, AI Playbooks &amp; Deal Workspaces
+    </text>
+
+    <!-- Interactive Ecosystem Feature Pills -->
+    <g transform="translate(240, 276)">
+      <!-- Pill 1 -->
+      <g>
+        <rect x="0" y="0" width="165" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.1" fill-opacity="0.9" />
+        <text x="82" y="20" text-anchor="middle" fill="#38bdf8" font-size="12" class="code-pill">⚖️ Live Redlining</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(180, 0)">
+        <rect x="0" y="0" width="175" height="32" rx="16" fill="#1e293b" stroke="#818cf8" stroke-width="1.1" fill-opacity="0.9" />
+        <text x="87" y="20" text-anchor="middle" fill="#a5b4fc" font-size="12" class="code-pill">🤖 AI Counter-Proposals</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(370, 0)">
+        <rect x="0" y="0" width="165" height="32" rx="16" fill="#1e293b" stroke="#c084fc" stroke-width="1.1" fill-opacity="0.9" />
+        <text x="82" y="20" text-anchor="middle" fill="#e879f9" font-size="12" class="code-pill">📂 Open-Source CLM</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(550, 0)">
+        <rect x="0" y="0" width="170" height="32" rx="16" fill="#1e293b" stroke="#34d399" stroke-width="1.1" fill-opacity="0.9" />
+        <text x="85" y="20" text-anchor="middle" fill="#6ee7b7" font-size="12" class="code-pill">🔒 Cryptographic Seals</text>
+      </g>
+    </g>
+
+    <!-- Bottom Meta Line -->
+    <text x="600" y="348" text-anchor="middle" fill="#64748b" font-size="13" class="subtitle-text">
+      Enterprise SaaS Marketplaces • Self-Hosted GitHub Repositories • Python &amp; OOXML Redline Tooling
+    </text>
+  </g>
+</svg>
