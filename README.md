@@ -1,6 +1,6 @@
 # Awesome-Collaborative-Contract-Negotiation-Portal
 
-# Top Collaborative Contract Negotiation Portal Ecosystem
+## Top Collaborative Contract Negotiation Portal Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Real-Time Redlining, Playbook-Guided Negotiation & Deal Workspace Collaboration*  
