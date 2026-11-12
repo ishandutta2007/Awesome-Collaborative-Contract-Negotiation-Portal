@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Collaborative-Contract-Negotiation-Portal/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Collaborative-Contract-Negotiation-Portal?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Collaborative-Contract-Negotiation-Portal/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Collaborative-Contract-Negotiation-Portal?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Collaborative-Contract-Negotiation-Portal/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Collaborative-Contract-Negotiation-Portal?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Collaborative-Contract-Negotiation-Portal/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Collaborative-Contract-Negotiation-Portal" alt="GitHub Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Collaborative-Contract-Negotiation-Portal/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Collaborative-Contract-Negotiation-Portal" alt="License" /></a>
@@ -66,9 +66,9 @@ The sector remains **moderately fragmented**—spanning over 150+ specialized ve
 
 ## 💻 Open-Source GitHub Projects & Tooling
 
-Curated open-source repositories and developer tooling for automated contract redlining, document-level tracked changes, self-hosted CLM, and digital agreement infrastructure—sorted in descending order by GitHub stars:
+Curated open-source repositories and developer tooling for automated contract redlining, document-level tracked changes, self-hosted CLM, and digital agreement infrastructure—sorted in descending order by GitHub_Stars:
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---------|------------|-------------|
 | **[Documenso](https://github.com/documenso/documenso)** | [![Stars](https://img.shields.io/github/stars/documenso/documenso?style=social&color=white)](https://github.com/documenso/documenso/stargazers) | ✍️ The open-source DocuSign alternative. Self-hosted digital signature and agreement workflow infrastructure featuring cryptographic signing, webhooks, and modern developer APIs. |
 | **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** | [![Stars](https://img.shields.io/github/stars/OpenSignLabs/OpenSign?style=social&color=white)](https://github.com/OpenSignLabs/OpenSign/stargazers) | 🔐 Free & open-source electronic signature platform with PDF templating, multi-party completion flows, custom signer fields, audit trails, and self-hosted Docker deployment. |
